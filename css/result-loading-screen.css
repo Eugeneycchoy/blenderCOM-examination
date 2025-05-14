@@ -1,0 +1,84 @@
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 42px;
+  gap: 2rem;
+  min-height: 60vh;
+}
+
+.loading-circle {
+  border: 1px solid white;
+  padding: 5rem;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 40px;
+}
+
+#percent {
+  font-family: Arial;
+  font-size: 14px;
+  font-weight: bold;
+  position: absolute;
+  top: 49px;
+  left: 24px;
+  width: 66px;
+  text-align: center;
+}
+
+.loading-circle {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading-circle svg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.progress-background {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.1);
+  stroke-width: 8;
+}
+
+.progress-circle {
+  fill: none;
+  stroke: #47aaf5;
+  stroke-width: 8;
+  stroke-linecap: round;
+  stroke-dasharray: 283;
+  stroke-dashoffset: 283;
+  animation: progress-animation 2s ease-in-out infinite;
+}
+
+#progress-text {
+  font-size: 2rem;
+  font-weight: bold;
+  color: white;
+  z-index: 1;
+}
+
+@keyframes progress-animation {
+  0% {
+    stroke-dashoffset: 283;
+  }
+  50% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: -283;
+  }
+}

@@ -1,0 +1,148 @@
+/* Start of Grid UI */
+.exam-result-grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 20px;
+  max-width: 1280px;
+  margin: 42px auto;
+}
+
+.exam-result-grid {
+  border: 1px solid white;
+  border-radius: 9.6px;
+  background-color: white;
+  color: #1b1b1f;
+  padding: 26px 34px;
+  min-width: 265px;
+}
+
+.exam-result-grid p {
+  font-size: 14px;
+  line-height: 21.8px;
+}
+
+.exam-result-msg {
+  max-width: 1280px;
+  margin: 1rem auto;
+}
+
+.exam-result-grid-item1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  min-height: 340px;
+}
+
+.exam-result-grid-item1 h4 {
+  font-size: 128px;
+  margin-block: 32px;
+}
+
+.exam-result-grid-item2 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.exam-result-grid-item3 {
+  grid-row-start: 2;
+  grid-row-end: 3;
+  grid-column-start: -5;
+  grid-column-end: -3;
+}
+
+.exam-result-grid-item2 h4,
+.exam-result-grid-item3 h4,
+.exam-result-grid-item4 h4 {
+  font-size: 60px;
+}
+
+.exam-result-grid-item4 {
+  grid-column-start: 7;
+  grid-column-end: -1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.exam-result-grid-item4 h4 {
+  margin-block: 32px;
+}
+
+.exam-result-grid h3 {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.exam-result-grid-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.exam-result-grid-bar {
+  width: 100%;
+  border: 1px solid blue;
+  margin-block: 14px;
+}
+/* End of Grid UI */
+
+.exam-result-main-msg {
+  font-size: 32px;
+  font-weight: 900;
+  margin-block: 42px;
+}
+
+.exam-result-msg {
+  font-size: 18px;
+  line-height: 21.8px;
+  margin-bottom: 1rem;
+}
+
+.showing-result-title {
+  font-size: 18px;
+}
+
+.showing-result-title-primary {
+  color: orange;
+}
+
+.exam-result-card-container {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.exam-result-card {
+  padding: 4rem;
+  border-radius: 9.6px;
+  background-color: rgb(47, 47, 47);
+  max-width: 421px;
+}
+
+.exam-result-card p {
+  line-height: 30px;
+  margin-top: 1rem;
+}
+
+@media (width <= 1100px) {
+  .exam-result-grid-item1 h4 {
+    font-size: 90px;
+    margin-block: 32px;
+  }
+
+  .exam-result-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .exam-result-card {
+    max-width: none;
+  }
+}
+
+@media (width <= 895px) {
+  .exam-result-grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+}

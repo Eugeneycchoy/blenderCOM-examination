@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/taking-exam.css" />
+  </head>
+  <body id="taking-exam">
+    <!-- submission dark overlay -->
+    <div class="taking-exam-dark-overlay">
+      <!-- Submission Modal -->
+      <div class="taking-exam-submitting-modal">
+        <h2>Submitting for Marking</h2>
+        <p class="warning-msg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta beatae
+          quas, quasi nulla sint ex officiis, blanditiis doloribus molestiae
+          quos praesentium, facilis iusto ducimus tempora voluptatibus
+          laudantium fuga vitae deleniti!
+        </p>
+        <div class="popup-warning">
+          <p>
+            You haven't answered all the questions yet. Do you still want to
+            proceed with the submission?
+          </p>
+        </div>
+        <div class="taking-exam-submitting-modal-controls">
+          <button class="btn-secondary">Back to the quiz</button>
+          <button class="btn-confirm-submission btn-primary">
+            Submit my answers
+          </button>
+        </div>
+      </div>
+      <!-- End of Submission Modal -->
+    </div>
+
+    <!-- assistance dark overlay -->
+    <div class="assistance-dark-overlay">
+      <!-- Assistance Modal -->
+      <div class="assistance-modal">
+        <div class="assistance-modal-left">
+          <ul>
+            <li>
+              <img src="../assets/icons/work-queue.svg" alt="" /> Work Queue
+            </li>
+            <li>
+              <img
+                class="active"
+                src="../assets/icons/work-queue.svg"
+                alt=""
+              />My Ticket
+            </li>
+          </ul>
+        </div>
+        <div class="assistance-modal-right">
+          <div class="assistance-modal-right-top">
+            <h2 class="assistance-modal-right-h2">
+              Create a Ticket for your problem
+            </h2>
+            <img
+              class="close-modal-btn"
+              src="../assets/icons/x-mark.svg"
+              alt=""
+            />
+          </div>
+          <div class="assistance-modal-right-input-fields">
+            <h3>Your Problem</h3>
+            <input type="text" class="assistance-modal-title-input" />
+            <h3>Description</h3>
+            <input type="text" class="assistance-modal-title-description" />
+            <h3>Attachment</h3>
+            <p>Image files such as jpg, jpeg, png and svg etc...</p>
+            <div class="assistance-modal-upload">
+              <div id="assistance-modal-drop-field" class="drop-field">
+                <p>Drop your image here or click to upload</p>
+                <input
+                  type="file"
+                  id="assistance-modal-file-input"
+                  accept="image/*"
+                  hidden
+                />
+                <div id="preview-container" class="preview-container"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="assistance-modal-controls">
+            <button class="btn-secondary">Cancel</button>
+            <button class="btn-confirm-submission btn-primary">
+              Submit Ticket
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- End of Assistance Modal -->
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li>Certification</li>
+      </ul>
+    </nav>
+
+    <h2 class="taking-exam-title">
+      <span class="taking-exam-title-primary">Blender Certificate</span> > Level
+      0 > Basic 3D Modeling in Blender
+    </h2>
+
+    <div class="progress-bar-dot-container">
+      <div class="progress-bar-dot">1</div>
+      <div class="progress-bar-dot">2</div>
+      <div class="progress-bar-dot">3</div>
+      <div class="progress-bar-dot">4</div>
+      <div class="progress-bar-dot">5</div>
+      <div class="progress-bar-dot">6</div>
+      <div class="progress-bar-dot">7</div>
+      <div class="progress-bar-dot">8</div>
+      <div class="progress-bar-dot">9</div>
+      <div class="progress-bar-dot">10</div>
+      <div class="progress-bar-dot">11</div>
+      <div class="progress-bar-dot">12</div>
+      <div class="progress-bar-dot">13</div>
+      <div class="progress-bar-dot">14</div>
+      <div class="progress-bar-dot">15</div>
+      <div class="progress-bar-dot">16</div>
+      <div class="progress-bar-dot">17</div>
+      <div class="progress-bar-dot">18</div>
+      <div class="progress-bar-dot">19</div>
+      <div class="progress-bar-dot">20</div>
+    </div>
+
+    <section class="taking-exam-question">
+      <div class="taking-exam-question-top">
+        <h2>Question <span class="question-count">1</span></h2>
+        <div class="taking-exam-countdown">
+          <img src="../assets/icons/exam-timer.svg" alt="" />
+          <p class="exam-countdown-timer">01:00:00</p>
+        </div>
+      </div>
+
+      <div class="taking-exam-question-carousel">
+        <div class="taking-exam-question-carousel-inner">
+          <!-- Question 1. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              How do you pan the camera view in Blender?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question6.gif"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Middle mouse button</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Left mouse button</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Right mouse button</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Spacebar</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 2. -->
+          <div class="taking-exam-question-carousel-item center-vertically">
+            <p class="taking-exam-question-question">
+              Which file format is commonly used to save Blender projects?
+            </p>
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>.blend</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>.jpg</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>.mp4</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>.docx</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 3. -->
+          <div class="taking-exam-question-carousel-item center-vertically">
+            <p class="taking-exam-question-question">
+              What is the default shape that appears when you start a new
+              project in Blender?
+            </p>
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Sphere</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Cube</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Cylinder</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Cone</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 4. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              Which key do you press to switch to Edit Mode in Blender?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question4.jpg"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Tab</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Shift</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Ctrl</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Alt</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 5. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              What is the purpose of the 'Extrude' tool in Blender?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question5.png"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>To rotate objects</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>To scale objects</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>To create new geometry by extending faces</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>To delete objects</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 6. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              According to the image below, which viewport shading mode is
+              currently active in Blender?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question1.png"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Wireframe</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Solid</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Material Preview</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Rendered</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 7. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              Which shortcut key is used to render an image in Blender?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question7.png"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>F12</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>F1</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>F5</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>F10</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 8. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              What is the 'Modifier' in Blender used for?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question8.png"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>To change the color of objects</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>To apply non-destructive changes to objects</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>To save the project</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>To import textures</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 9. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              Which tool is used to move objects in Blender?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question9.gif"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Scale tool</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Rotate tool</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Grab tool</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Extrude tool</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 10. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              What does the 'Subdivision Surface' modifier do?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question10.png"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Adds more detail to the mesh by subdividing faces</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Changes the color of the surface</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Deletes faces from the mesh</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Combines multiple objects into one</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 11. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              How do you add a new object to the scene in Blender?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question11.jpg"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Press Shift + A</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Press Ctrl + A</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Press Alt + A</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Press Tab</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 12. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              What is the purpose of the 'Loop Cut' tool?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question12.webp"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>To cut the object in half</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>To add a loop of edges to the mesh</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>To delete a loop of edges</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>To rotate the object</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 13. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              Which panel allows you to change the material properties of an
+              object?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question13.jpg"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Render panel</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Material panel</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Texture panel</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>World panel</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 14. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              What is the shortcut key to switch to Wireframe view?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question14.jpg"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Z</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>X</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>C</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>V</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 15. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              How do you scale an object uniformly in Blender?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question15.gif"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Press S and drag the mouse</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Press G and drag the mouse</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Press R and drag the mouse</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Press E and drag the mouse</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 16. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              What is the purpose of the 'Mirror' modifier?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question16.png"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>To create a mirrored copy of the object</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>To change the object's color</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>To rotate the object</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>To delete the object</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 17. -->
+          <div class="taking-exam-question-carousel-item center-vertically">
+            <p class="taking-exam-question-question">
+              Which key do you press to undo an action in Blender?
+            </p>
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Ctrl + Z</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Ctrl + Y</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Ctrl + S</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Ctrl + A</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 18. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              What does the 'Bevel' tool do?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question18.jpg"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Rounds off the edges of the mesh</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Deletes the edges of the mesh</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Rotates the mesh</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Scales the mesh</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Question 19. -->
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              How do you join two objects into one in Blender?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question19.png"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Press Ctrl + J</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Press Ctrl + G</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Press Ctrl + M</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Press Ctrl + P</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="taking-exam-question-carousel-item">
+            <p class="taking-exam-question-question">
+              Which workspace is used for animating objects in Blender?
+            </p>
+            <img
+              class="taking-exam-question-img"
+              src="../assets/images/quiz-images/blender_quiz_question20.gif"
+              alt=""
+            />
+
+            <div class="taking-exam-question-mc">
+              <div class="mc A">
+                <div class="mc-circle">A</div>
+                <p>Modeling</p>
+              </div>
+
+              <div class="mc B">
+                <div class="mc-circle">B</div>
+                <p>Sculpting</p>
+              </div>
+
+              <div class="mc C">
+                <div class="mc-circle">C</div>
+                <p>Animation</p>
+              </div>
+
+              <div class="mc D">
+                <div class="mc-circle">D</div>
+                <p>Shading</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exam-controls">
+        <div class="exam-controls-left">
+          <div class="exam-report-flag">
+            <div class="report-flag-popup">
+              <p>Need help?</p>
+            </div>
+            <img
+              id="report-flag"
+              src="../assets/icons/report-flag.svg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="exam-controls-right">
+          <div class="exam-next-prev">
+            <button class="btn-secondary taking-exam-question-carousel-prev">
+              Previous Question
+            </button>
+            <button class="btn-secondary taking-exam-question-carousel-next">
+              Next Question
+            </button>
+          </div>
+          <div class="btn-primary exam-submit-btn">
+            <img
+              class="icon-btn-icon"
+              src="../assets/icons/submit-btn.svg"
+              alt=""
+            />
+            Submit
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <h2 class="exam-footer">Footer</h2>
+    </footer>
+
+    <script src="../js/taking-exam.js"></script>
+  </body>
+</html>

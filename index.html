@@ -1,0 +1,757 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Carousel</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Popup Modal -->
+    <div class="exam-dark-overlay show">
+      <div class="exam-modal-agreement">
+        <div class="exam-modal-agreement-top">
+          <img
+            class="exam-modal-agreement-logo"
+            src="./assets/icons/paperclip-solid.svg"
+            alt=""
+          />
+          <h2>Terms and Conditions</h2>
+          <img
+            class="close-modal-btn"
+            src="./assets/icons/x-mark.svg"
+            alt="x-mark"
+          />
+        </div>
+        <div class="agreement-content">
+          <h2 class="exam-modal-exam-title level-0-1">
+            Basic 3D Modeling in Blender
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-0-2 d-none">
+            Introduction to Blender Animation
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-0-3 d-none">
+            Creating Simple Objects in Blender
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-0-4 d-none">
+            Blender Basics: Modeling and Texturing
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-0-5 d-none">
+            Animating Basic Shapes in Blender
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-0-6 d-none">
+            Blender Beginner's 3D Challenge
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-0-7 d-none">
+            Fundamentals of Blender Animation
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-0-8 d-none">
+            Simple Scene Creation in Blender
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-0-9 d-none">
+            Blender Basics: Lighting and Rendering
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-0-10 d-none">
+            Getting Started with Blender Sculpting
+          </h2>
+
+          <!-- Level One Exam Modal Buttons -->
+          <h2 class="exam-modal-exam-title level-1-1 d-none">
+            Advanced 3D Modeling Techniques in Blender
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-1-2 d-none">
+            Intermediate Blender Animation
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-1-3 d-none">
+            Complex Object Creation in Blender
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-1-4 d-none">
+            Blender Intermediate: Texturing and Shading
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-1-5 d-none">
+            Animating Characters in Blender
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-1-6 d-none">
+            Blender Intermediate 3D Challenge
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-1-7 d-none">
+            Blender Workflow Optimization
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-1-8 d-none">
+            Creating Detailed Scenes in Blender
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-1-9 d-none">
+            Blender Intermediate: Lighting and Rendering
+          </h2>
+
+          <h2 class="exam-modal-exam-title level-1-10 d-none">
+            Advanced Sculpting Techniques in Blender
+          </h2>
+          <p>
+            Eligibility: This quiz is open to all individuals who have
+            registered on our platform. Ensure you have a stable internet
+            connection to avoid disruptions. Time Limit: The quiz must be
+            completed within the allotted time of 60 minutes. The timer will
+            start as soon as you click the "Start Exam" button. Question Format:
+            The quiz consists of multiple-choice questions, true/false
+            questions, and short answer questions. Make sure to review each
+            question carefully before submitting your answers. Submission: Once
+            you submit your answers, you will not be able to change them. Ensure
+            all answers are final before submission. Scoring: Each question
+            carries equal weight. Your final score will be displayed upon
+            completion of the quiz. Integrity: By taking this quiz, you agree to
+            complete it independently without any external assistance. Any form
+            of cheating or plagiarism will result in disqualification. Technical
+            Issues: In case of any technical issues, please contact our support
+            team immediately. We are not responsible for any loss of data due to
+            technical failures. Privacy: Your personal information and quiz
+            results will be kept confidential and used solely for the purpose of
+            this quiz.
+          </p>
+
+          <button class="agreement-content-btn alt">Decline</button>
+          <button class="agreement-content-btn take-exam">Take exam</button>
+        </div>
+      </div>
+    </div>
+
+    <nav>
+      <h2>Navbar</h2>
+    </nav>
+
+    <h2 class="exam">Available Exams</h2>
+
+    <h2 class="exam-level">Level 0 Exams</h2>
+    <div class="carousel level-0">
+      <div class="carousel-inner">
+        <!-- Level 0 - Exam 1. -->
+        <div class="carousel-item active">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-0-1">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Modeling Techniques</p>
+            <h3>Basic 3D Modeling in Blender</h3>
+            <p>
+              Learn to create basic 3D models using Blender's fundamental tools
+              and techniques
+            </p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 0 - Exam 2. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-0-2">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Animation Basics</p>
+            <h3>Introduction to Blender Animation</h3>
+            <p>
+              Discover the basics of animating objects and characters in Blender
+            </p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/short-questions-tag.svg" alt="" />SHORT
+                QUESTION
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 0 - Exam 3. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-0-3">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Modeling Techniques</p>
+            <h3>Creating Simple Objects in Blender</h3>
+            <p>
+              Practice creating simple geometry shapes and objects in Blender
+            </p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 0 - Exam 4. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-0-4">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Core Concepts and Workflows</p>
+            <h3>Blender Basics: Modeling and Texturing</h3>
+            <p>
+              Understand the basics of modeling and applying textures to your
+              creations
+            </p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 0 - Exam 5. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-0-5">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Animation Basics</p>
+            <h3>Animating Basic Shapes in Blender</h3>
+            <p>Animate basic shapes and learn keyframe animation techniques</p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 0 - Exam 6. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-0-6">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Core Concepts and Workflows</p>
+            <h3>Blender Beginner's 3D Challenge</h3>
+            <p>Test your knowledge of Blener's core tools and workflows</p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/short-questions-tag.svg" alt="" />SHORT
+                QUESTION
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 0 - Exam 7. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-0-7">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Animation Basics</p>
+            <h3>Fundamentals of Blender Animation</h3>
+            <p>Master the fundamental principles of animation in Blender</p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/short-questions-tag.svg" alt="" />SHORT
+                QUESTION
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 0 - Exam 8. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-0-8">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Scene Composition</p>
+            <h3>Simple Scene Creation in Blender</h3>
+            <p>
+              Create and compose simple scenes using basic objects and lighting
+            </p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 0 - Exam 9. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-0-9">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Lighting and Rendering</p>
+            <h3>Blender Basics: Lighting and Rendering</h3>
+            <p>Learn the essentials of lighting and rendering in Blender</p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/short-questions-tag.svg" alt="" />SHORT
+                QUESTION
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 0 - Exam 10. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-0-10">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Sculpting Techniques</p>
+            <h3>Getting Started with Blender Sculpting</h3>
+            <p>Explore the basics of sculpting and shaping models in Blender</p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="prev"><</button>
+      <button class="next">></button>
+    </div>
+
+    <h2 class="exam-level">Level 1 Exams</h2>
+    <div class="carousel level-1">
+      <div class="carousel-inner">
+        <!-- Level 1 - Exam 1. -->
+        <div class="carousel-item active">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-1-1">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Modeling Techniques</p>
+            <h3>Advanced 3D Modeling Techniques in Blender</h3>
+            <p>
+              Dive into advanced modeling techniques for creating complex 3D
+              models
+            </p>
+            <div class="course-tags">
+              <div class="course-tag orange-tag">
+                <img
+                  src="./assets/icons/intermediate-tag.svg"
+                  alt=""
+                />INTERMEDIATE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/short-questions-tag.svg" alt="" />SHORT
+                QUESTIONS
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 1 - Exam 2. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-1-2">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Animation Techniques</p>
+            <h3>Intermediate Blender Animation</h3>
+            <p>
+              Enhance your animation skills with intermediate techniques and
+              tools
+            </p>
+            <div class="course-tags">
+              <div class="course-tag orange-tag">
+                <img
+                  src="./assets/icons/intermediate-tag.svg"
+                  alt=""
+                />INTERMEDIATE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 1 - Exam 3. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-1-3">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Modeling Techniques</p>
+            <h3>Complex Object Creation in Blender</h3>
+            <p>
+              Create detailed and complex objects using advanced modeling
+              methods
+            </p>
+            <div class="course-tags">
+              <div class="course-tag red-tag">
+                <img src="./assets/icons/advanced-tag.svg" alt="" />ADVANCED
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 1 - Exam 4. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-1-4">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Texturing and Shading</p>
+            <h3>Blender Intermediate: Texturing and Shading</h3>
+            <p>
+              Apply advanced texturing and shading techniques to your models
+            </p>
+            <div class="course-tags">
+              <div class="course-tag orange-tag">
+                <img
+                  src="./assets/icons/intermediate-tag.svg"
+                  alt=""
+                />INTERMEDIATE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/short-questions-tag.svg" alt="" />SHORT
+                QUESTION
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 1 - Exam 5. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-1-5">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Animation Techniques</p>
+            <h3>Animating Characters in Blender</h3>
+            <p>
+              Learn to animate characters with more advanced rigging and
+              animation tools
+            </p>
+            <div class="course-tags">
+              <div class="course-tag green-tag">
+                <img src="./assets/icons/baby-solid.svg" alt="" />BEGINNER
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 1 - Exam 6. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-1-6">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Core Concepts and Workflows</p>
+            <h3>Blender Intermediate 3D Challenge</h3>
+            <p>
+              Challenge your understanding of Blender's intermediate tools and
+              workflows
+            </p>
+            <div class="course-tags">
+              <div class="course-tag orange-tag">
+                <img
+                  src="./assets/icons/intermediate-tag.svg"
+                  alt=""
+                />INTERMEDIATE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/short-questions-tag.svg" alt="" />SHORT
+                QUESTION
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 1 - Exam 7. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-1-7">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Core Concepts and Workflows</p>
+            <h3>Blender Workflow Optimization</h3>
+            <p>Optimize your Blender workflow for efficiency productivity</p>
+            <div class="course-tags">
+              <div class="course-tag orange-tag">
+                <img
+                  src="./assets/icons/intermediate-tag.svg"
+                  alt=""
+                />INTERMEDIATE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/short-questions-tag.svg" alt="" />SHORT
+                QUESTION
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 1 - Exam 8. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-1-8">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Scene Composition</p>
+            <h3>Creating Detailed Scenes in Blender</h3>
+            <p>Compose and detail intricate scenes with advanced techniques</p>
+            <div class="course-tags">
+              <div class="course-tag red-tag">
+                <img src="./assets/icons/advanced-tag.svg" alt="" />ADVANCED
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 1 - Exam 9. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-1-9">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Core concepts and workflows</p>
+            <h3>Blender Intermediate: Lighting and Rendering</h3>
+            <p>
+              Master intermediate lighting and rendering techniques for
+              realistic results
+            </p>
+            <div class="course-tags">
+              <div class="course-tag orange-tag">
+                <img
+                  src="./assets/icons/intermediate-tag.svg"
+                  alt=""
+                />INTERMEDIATE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />MULTIPLE
+                CHOICE
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Level 1 - Exam 10. -->
+        <div class="carousel-item">
+          <div class="card-img">
+            <div class="dark-overlay">
+              <button class="take-exam level-1-10">Take Exam</button>
+            </div>
+          </div>
+          <div class="card-info">
+            <p>Sculpting Techniques</p>
+            <h3>Advanced Sculpting Techniques in Blender</h3>
+            <p>Refine your sculpting skills with advanced tools and methods</p>
+            <div class="course-tags">
+              <div class="course-tag red-tag">
+                <img src="./assets/icons/advanced-tag.svg" alt="" />ADVANCED
+              </div>
+              <div class="course-tag question-type-tag">
+                <img src="./assets/icons/multiple-choice.svg" alt="" />PRACTICAL
+                TASK
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="prev"><</button>
+      <button class="next">></button>
+    </div>
+
+    <h2 class="exam-cta">
+      Exams of Level 2 and above will be added in the future <br />
+      Stay tuned!
+    </h2>
+
+    <div class="exam-cta-cards">
+      <div class="exam-cta-card-container">
+        <h3>Share your achievement!</h3>
+        <p>
+          Share your newly obtained certificate via social media platforms so
+          your friends and family, or potential employers will know about it.
+        </p>
+      </div>
+      <div class="exam-cta-card-container">
+        <h3>Resume Boost</h3>
+        <p>
+          Add your Blender Certification to your resume, portfolio or LinkedIn
+          profile to showcase your skills to potential employers!
+        </p>
+      </div>
+      <div class="exam-cta-card-container">
+        <h3>Ask for a human help</h3>
+        <p>
+          Think we've got your result wrong? Don't worry, you can submit a
+          ticket <span class="exam-hyperlink">here</span> or contact us via
+          example@mail.com
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <h2 class="exam-footer">Footer</h2>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>

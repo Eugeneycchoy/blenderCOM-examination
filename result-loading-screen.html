@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Stay put</title>
+    <script src="result-loading-screen.js"></script>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/result-loading-screen.css" />
+  </head>
+  <body id="result-loading-screen">
+    <nav>Navbar</nav>
+
+    <div class="result-loading-container">
+      <h2 class="taking-exam-title">
+        <span class="taking-exam-title-primary">Blender Certificate</span> >
+        Core concepts and workflows > Level 1 - 3D Modeling
+      </h2>
+
+      <div class="loading-container">
+        <div class="loading-circle">
+          <svg viewBox="0 0 100 100">
+            <circle class="progress-background" cx="50" cy="50" r="45" />
+            <circle class="progress-circle" cx="50" cy="50" r="45" />
+          </svg>
+          <p id="progress-text">0%</p>
+        </div>
+
+        <h2>Grading in progress</h2>
+        <p>Hang tight! We're calculating your score</p>
+      </div>
+    </div>
+
+    <script src="./js/result-loading-screen.js"></script>
+  </body>
+</html>

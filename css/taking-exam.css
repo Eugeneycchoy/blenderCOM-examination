@@ -1,0 +1,482 @@
+.taking-exam-dark-overlay,
+.assistance-dark-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+  overflow-y: auto;
+}
+
+.taking-exam-dark-overlay.show,
+.assistance-dark-overlay.show {
+  opacity: 1;
+  transition: 0.3s ease-in-out opacity;
+  pointer-events: all;
+}
+
+body > div.exam-dark-overlay.show > div > div.agreement-content > h2 {
+  padding-left: 0px;
+}
+
+/* Prevent body scrolling when overlay is shown */
+body.modal-open {
+  overflow: hidden;
+  padding-right: 15px; /* Prevent layout shift when scrollbar disappears */
+}
+
+.taking-exam-submitting-modal,
+.assistance-modal {
+  background-color: #30353b;
+  width: 70%;
+  border-radius: 9.6px;
+  z-index: 999;
+  max-height: 90vh; /* Limit modal height */
+  overflow-y: auto; /* Enable scrolling for modal content if needed */
+}
+
+.assistance-modal {
+  display: flex;
+}
+
+.assistance-modal-left {
+  padding: 40px 20px;
+}
+
+.assistance-model-left,
+.assistance-modal-right {
+  background-color: white;
+  padding: 40px;
+}
+
+.assistance-modal-left {
+  width: 30%;
+  border-radius: 12px 0 0 12px;
+}
+
+.assistance-modal-left > ul > li {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  cursor: pointer;
+}
+
+.assistance-modal-left > ul > li > img {
+  width: 20px;
+  filter: invert(87%) sepia(0%) saturate(0%) hue-rotate(153deg) brightness(87%)
+    contrast(87%);
+}
+
+.assistance-modal-right {
+  width: 70%;
+  color: #1b1b1f;
+  border-radius: 0 12px 12px 0;
+}
+
+.assistance-modal-right-top {
+  margin-bottom: 34px;
+  font-size: 24px;
+  color: #1b1b1f;
+  display: flex;
+  background-image: none !important;
+  justify-content: space-between;
+}
+
+.assistance-modal-right h3 {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 6px;
+}
+
+.assistance-modal-right input {
+  width: 100%;
+  padding: 0.5rem;
+  border-color: #c2c2c2;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 0.8px;
+  margin-bottom: 20px;
+}
+
+.assistance-modal-right input:nth-child(4) {
+  height: 200px;
+}
+
+#assistance-modal-drop-field {
+  width: 100%;
+  padding: 0.5rem;
+  padding-block: 2rem;
+  border-style: dashed;
+  border-color: #c2c2c2;
+  border-width: 2px;
+  margin-block: 1rem;
+  cursor: pointer;
+}
+
+.assistance-modal-controls {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.drop-field {
+  border: 2px dashed #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.drop-field.dragover {
+  border-color: #47aaf5;
+  background-color: rgba(71, 170, 245, 0.1);
+}
+
+.preview-container {
+  max-width: 100%;
+  margin-top: 10px;
+}
+
+.preview-container img {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: contain;
+}
+
+.exam-countdown-timer.warning {
+  color: #ff6b6b;
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button {
+  position: static;
+  padding: 0;
+  transform: none;
+}
+
+.taking-exam-title-primary {
+  color: #ec7824;
+  font-weight: 900;
+}
+
+.progress-bar-dot-container {
+  display: flex;
+  gap: 15.86px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 63px;
+}
+
+.progress-bar-dot {
+  border: 1px solid white;
+  min-width: 33.44px;
+  min-height: 33.44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1b1b1f;
+}
+
+.progress-bar-dot:hover {
+  cursor: pointer;
+  transition: 0.2s all ease-in-out;
+  background-color: white !important;
+  color: #1b1b1f !important;
+}
+
+.progress-bar-dot.active {
+  background-color: white !important;
+  color: #1b1b1f !important;
+}
+
+.progress-bar-dot.answered {
+  background-color: #616170;
+  color: white;
+}
+
+.progress-bar-dot.unanswered {
+  background-color: #1b1b1f;
+  color: white;
+}
+
+.taking-exam-title {
+  margin-bottom: 45px;
+  font-size: 18px;
+}
+
+.taking-exam-question {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.taking-exam-question-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 36px;
+  width: 65%;
+}
+
+.taking-exam-countdown {
+  display: flex;
+  align-items: center;
+}
+
+.taking-exam-question-question {
+  font-size: 24px;
+  margin-bottom: 23px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  min-height: 50px;
+}
+
+.taking-exam-question-img {
+  max-height: 277px;
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  max-width: 90%;
+}
+
+.taking-exam-question-carousel {
+  position: relative;
+  width: 65%;
+  overflow: hidden;
+  text-align: center;
+}
+
+.taking-exam-question-carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.taking-exam-question-carousel-item {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+  overflow: hidden;
+}
+
+.taking-exam-question-mc {
+  margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  height: 480px;
+}
+
+.mc {
+  display: flex;
+  color: #1b1b1f;
+  background-color: white;
+  width: 86%;
+  padding: 2rem;
+  border-radius: 12px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.mc:hover {
+  background-color: rgba(0, 153, 255, 1);
+  transition: 0.3s ease-in-out all;
+}
+
+.mc.selected {
+  background-color: #ec7824;
+  color: white;
+}
+
+.mc-circle {
+  padding: 1.2rem;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  background-color: #1b1b1f;
+  color: white;
+  margin-right: 5rem;
+  margin-left: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exam-controls {
+  width: 78%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.exam-controls-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.exam-report-flag {
+  position: relative;
+  display: inline-flex; /* Changed to inline-flex */
+  justify-content: center;
+  align-items: center;
+  width: 32px; /* Make container larger than image */
+  height: 32px;
+  border: 1px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.exam-report-flag:hover {
+  background-color: white;
+  transition: 0.3s all ease-in-out;
+}
+
+.exam-report-flag:hover #report-flag {
+  filter: brightness(0) saturate(100%); /* Changes image to black/dark color */
+}
+
+#report-flag {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(1);
+  border-radius: 0; /* Remove border-radius from image */
+  border: none; /* Remove border from image */
+}
+
+.report-flag-popup {
+  background-color: white;
+  color: #1b1b1f;
+  padding: 0.5rem;
+  border-radius: 4px;
+  position: absolute;
+  top: 0;
+  left: -8rem;
+  transition: 0.3s opacity ease-in-out;
+  opacity: 0;
+  pointer-events: none; /* Prevent popup from interfering with hover */
+}
+
+/* Show popup when hovering over the container */
+.exam-report-flag:hover .report-flag-popup {
+  opacity: 1;
+}
+
+.icon-btn-icon {
+  width: 15px;
+  margin-right: 0.5rem;
+  filter: brightness(0) invert(1); /* Makes the icon white */
+}
+
+.taking-exam-submitting-modal {
+  padding: 40px;
+}
+
+.taking-exam-submitting-modal h2 {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.taking-exam-submitting-modal p {
+  font-size: 14px;
+  line-height: 21.8px;
+  margin-top: 22px;
+}
+
+#taking-exam
+  > div.taking-exam-dark-overlay.show
+  > div
+  > div
+  > button.btn-secondary,
+#taking-exam
+  > div.taking-exam-dark-overlay.show
+  > div
+  > div
+  > button.btn-confirm-submission.btn-primary {
+  width: 100%;
+}
+
+#taking-exam
+  > div.taking-exam-dark-overlay.show
+  > div
+  > div
+  > button.btn-secondary {
+  margin: 1.5rem auto;
+}
+
+.warning-msg {
+  margin-top: 22px;
+}
+
+#taking-exam
+  > div.taking-exam-dark-overlay.show
+  > div
+  > div.popup-warning.show
+  > p {
+  margin: auto;
+}
+
+@media (width < 1250px) {
+  .taking-exam-question-carousel {
+    width: 90%;
+  }
+}
+
+@media (width < 900px) {
+  .exam-controls {
+    width: 90%;
+  }
+
+  body {
+    padding: 0 10px;
+  }
+}
+
+@media (width <= 650px) {
+  .taking-exam-question-mc {
+    margin-top: 20px;
+  }
+}
+
+@media (width <= 515px) {
+  .exam-controls-right {
+    display: block;
+  }
+
+  .exam-controls-right {
+    text-align: end;
+  }
+
+  .exam-next-prev {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
