@@ -16,8 +16,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   setInterval(updateProgress, 20);
 
-  // Redirect after 3 seconds
+  // Redirect after 2.5 seconds with correct GitHub Pages path
   setTimeout(() => {
-    window.location.href = "../BlenderCOM-examination/exam-result.html";
+    window.location.href = "/blenderCOM-examination/exam-result.html";
   }, 2500);
 });
