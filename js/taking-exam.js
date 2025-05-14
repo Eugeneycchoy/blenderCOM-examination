@@ -330,7 +330,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("totalQuestions", quizAnswers.length);
 
     // First navigate to loading screen
-    window.location.href = "/result-loading-screen.html";
+    window.location.href = "../result-loading-screen.html";
   });
 
   // Initial call to set up initial state
