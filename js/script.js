@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      window.location.href = `/${targetRoute}`;
+      window.location.href = targetRoute;
     },
   };
 
