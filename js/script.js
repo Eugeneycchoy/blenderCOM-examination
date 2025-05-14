@@ -11,48 +11,28 @@ document.addEventListener("DOMContentLoaded", () => {
   // Add this object at the top of your file with other constants
   const EXAM_ROUTES = {
     // Level 0 Examinations
-    "Basic 3D Modeling in Blender":
-      "/blenderCOM-examination/Exams/level-0-1.html",
-    "Introduction to Blender Animation":
-      "/blenderCOM-examination/Exams/level-0-2.html",
-    "Creating Simple Objects in Blender":
-      "/blenderCOM-examination/Exams/level-0-3.html",
-    "Blender Basics: Modeling and Texturing":
-      "/blenderCOM-examination/Exams/level-0-4.html",
-    "Animating Basic Shapes in Blender":
-      "/blenderCOM-examination/Exams/level-0-5.html",
-    "Blender Beginner's 3D Challenge":
-      "/blenderCOM-examination/Exams/level-0-6.html",
-    "Fundamentals of Blender Animation":
-      "/blenderCOM-examination/Exams/level-0-7.html",
-    "Simple Scene Creation in Blender":
-      "/blenderCOM-examination/Exams/level-0-8.html",
-    "Blender Basics: Lighting and Rendering":
-      "/blenderCOM-examination/Exams/level-0-9.html",
-    "Getting Started with Blender Sculpting":
-      "/blenderCOM-examination/Exams/level-0-10.html",
+    "Basic 3D Modeling in Blender": "./exams/level-0-1.html",
+    "Introduction to Blender Animation": "./exams/level-0-2.html",
+    "Creating Simple Objects in Blender": "./exams/level-0-3.html",
+    "Blender Basics: Modeling and Texturing": "./exams/level-0-4.html",
+    "Animating Basic Shapes in Blender": "./exams/level-0-5.html",
+    "Blender Beginner's 3D Challenge": "./exams/level-0-6.html",
+    "Fundamentals of Blender Animation": "./exams/level-0-7.html",
+    "Simple Scene Creation in Blender": "./exams/level-0-8.html",
+    "Blender Basics: Lighting and Rendering": "./exams/level-0-9.html",
+    "Getting Started with Blender Sculpting": "./exams/level-0-10.html",
 
     // Level 1 Examinations
-    "Advanced 3D Modeling Techniques in Blender":
-      "/blenderCOM-examination/Exams/level-1-1.html",
-    "Intermediate Blender Animation":
-      "/blenderCOM-examination/Exams/level-1-2.html",
-    "Complex Object Creation in Blender":
-      "/blenderCOM-examination/Exams/level-1-3.html",
-    "Blender Intermediate: Texturing and Shading":
-      "/blenderCOM-examination/Exams/level-1-4.html",
-    "Animating Characters in Blender":
-      "/blenderCOM-examination/Exams/level-1-5.html",
-    "Blender Intermediate 3D Challenge":
-      "/blenderCOM-examination/Exams/level-1-6.html",
-    "Blender Workflow Optimization":
-      "/blenderCOM-examination/Exams/level-1-7.html",
-    "Creating Detailed Scenes in Blender":
-      "/blenderCOM-examination/Exams/level-1-8.html",
-    "Blender Intermediate: Lighting and Rendering":
-      "/blenderCOM-examination/Exams/level-1-9.html",
-    "Advanced Sculpting Techniques in Blender":
-      "/blenderCOM-examination/Exams/level-1-10.html",
+    "Advanced 3D Modeling Techniques in Blender": "./exams/level-1-1.html",
+    "Intermediate Blender Animation": "./exams/level-1-2.html",
+    "Complex Object Creation in Blender": "./exams/level-1-3.html",
+    "Blender Intermediate: Texturing and Shading": "./exams/level-1-4.html",
+    "Animating Characters in Blender": "./exams/level-1-5.html",
+    "Blender Intermediate 3D Challenge": "./exams/level-1-6.html",
+    "Blender Workflow Optimization": "./exams/level-1-7.html",
+    "Creating Detailed Scenes in Blender": "./exams/level-1-8.html",
+    "Blender Intermediate: Lighting and Rendering": "./exams/level-1-9.html",
+    "Advanced Sculpting Techniques in Blender": "./exams/level-1-10.html",
   };
 
   // Take Exam Buttons Event Listeners
