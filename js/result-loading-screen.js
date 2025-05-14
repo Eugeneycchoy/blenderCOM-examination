@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Redirect after 2.5 seconds with correct GitHub Pages path
   setTimeout(() => {
-    window.location.href = "/blenderCOM-examination/exam-result.html";
+    // Use relative path to ensure correct navigation within the repository
+    const baseUrl = "/blenderCOM-examination";
+    window.location.href = `${baseUrl}/exam-result.html`;
   }, 2500);
 });
