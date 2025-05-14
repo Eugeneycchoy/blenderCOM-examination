@@ -18,6 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Redirect after 3 seconds
   setTimeout(() => {
-    window.location.href = "../exam-result.html";
+    window.location.href = "./exam-result.html";
   }, 2500);
 });
