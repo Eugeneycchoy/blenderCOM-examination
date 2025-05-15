@@ -27,6 +27,14 @@ document.addEventListener("DOMContentLoaded", () => {
     0, 0, 1, 0, 3, 1, 0, 1, 2, 3, 0, 3, 1, 0, 0, 3, 0, 3, 0, 2,
   ];
 
+  // Determine how much time should be given for a specific quiz
+  // Based on how many questions
+  // MC: 1.5 minutes for every question
+  function determineQuizTimeLimitInMinutes(arr) {
+    const numberOfQuestions = arr.length;
+    return numberOfQuestions * 1.5;
+  }
+
   // Array to store selections for each question
   const selections = new Array(items.length).fill(null);
 
@@ -78,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   // Timer Implementation
   const timerElement = document.querySelector(".exam-countdown-timer");
-  let timeLeft = 10 * 60; // 1 hour in seconds
+  let timeLeft = determineQuizTimeLimitInMinutes(quizAnswers) * 60; // 1 hour in seconds
   function updateTimer() {
     const hours = Math.floor(timeLeft / 3600);
     const minutes = Math.floor((timeLeft % 3600) / 60);

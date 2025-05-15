@@ -569,6 +569,7 @@ footer h2 {
 
 .exam-modal-agreement {
   width: 66%;
+  max-height: 90vh; /* Limit height to 90% of viewport */
   background-color: white;
   z-index: 999;
   color: black;
@@ -576,6 +577,65 @@ footer h2 {
   transform: scale(0.95);
   opacity: 0;
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  overflow: hidden; /* Prevent content overflow */
+}
+
+.exam-modal-agreement-top {
+  padding: 1rem;
+  flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+.agreement-content {
+  flex: 1; /* Take remaining space */
+  overflow-y: auto; /* Make content scrollable */
+  padding: 20px;
+  color: #333;
+  -webkit-overflow-scrolling: touch; /* Smooth scroll on iOS */
+}
+
+@media (width <= 1000px) {
+  .exam-cta-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .exam-cta-card-container {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (width <= 840px) {
+  h2.exam-cta {
+    font-size: 30px;
+    width: auto;
+  }
+}
+
+@media (width < 989px) {
+  .exam-modal-agreement {
+    width: 90%;
+    margin: 10px;
+    max-height: 85vh; /* Slightly smaller on mobile */
+  }
+
+  .agreement-content {
+    padding: 15px;
+  }
+}
+
+@media (width < 576px) {
+  .exam-modal-agreement {
+    width: 95%;
+    margin: 5px;
+    max-height: 80vh; /* Even smaller on mobile */
+  }
+
+  .agreement-content {
+    padding: 10px;
+  }
 }
 
 .exam-dark-overlay.show .exam-modal-agreement {
@@ -651,22 +711,4 @@ footer h2 {
 
 body > div.exam-dark-overlay.show > div > div.agreement-content > h2 {
   padding-left: 0px;
-}
-@media (width <= 1000px) {
-  .exam-cta-cards {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .exam-cta-card-container {
-    width: 100%;
-    height: auto;
-  }
-}
-
-@media (width <= 840px) {
-  h2.exam-cta {
-    font-size: 30px;
-    width: auto;
-  }
 }
