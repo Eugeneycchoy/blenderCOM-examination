@@ -141,6 +141,9 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
+  // What happens after the Take Exam button from
+  // the exam thumbnail is clicked
+  // i.e. It should show a popup modal
   const ExamButtonController = {
     levels: {
       zero: Array.from({ length: 10 }, (_, i) => `0-${i + 1}`),
@@ -175,8 +178,12 @@ document.addEventListener("DOMContentLoaded", () => {
     },
   };
 
-  // Replace the existing takeExamBtn event listener with this:
+  // Handle the DOM retrieval as well as
+  // eventListener application of the
+  // "Take Exam" button from the confirmation modal
   const ExamNavigationController = {
+    // init() gets the DOM
+    // then add an eventListener to the DOM element
     init() {
       const takeExamBtn = document.querySelector(
         ".agreement-content-btn.take-exam"
@@ -189,24 +196,33 @@ document.addEventListener("DOMContentLoaded", () => {
       takeExamBtn.addEventListener("click", () => this.handleNavigation());
     },
 
+    // This following code is what happens after the
+    // takeExamBtn is clicked
     handleNavigation() {
+      // Check the title that does not have a ".d-none" class
+      // Meaning that it is not hidden
       const visibleTitle = document.querySelector(
         ".exam-modal-exam-title:not(.d-none)"
       );
 
+      // Edge case check
       if (!visibleTitle) {
         console.error("No exam title selected");
         return;
       }
 
+      // get rid of the space in both ends of the string
       const examTitle = visibleTitle.textContent.trim();
+      // get the url, according to the exam title
       const targetRoute = EXAM_ROUTES[examTitle];
 
+      // Edge case check
       if (!targetRoute) {
         console.error(`No route found for exam: ${examTitle}`);
         return;
       }
 
+      // Navigate to the target url
       window.location.href = `${targetRoute}`;
     },
   };
